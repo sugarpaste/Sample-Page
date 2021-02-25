@@ -4,162 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo</title>
+    <title>Sample page</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <section class="main-container" id="head">
-        <header class="main-header container">
+    <section class="main-container main-container--text-color" id="head">
+        <header class="main-header container main-container--text-color">
+            <a href="" class="logo"><img src="/images/logo.svg" alt="logo nova" class="main-logo"></a>
             <nav class="main-nav">
-                <img src="/images/logo.svg" alt="logo nova" class="main-logo">
+                <label for="menu-switcher" class="menu-switcher"></label>
+                <input type="checkbox" id="menu-switcher">
                 <ul class="main-nav__links">
-                    <li class="main-nav__item"><a href="" class="main-nav__links">The Team</a></li>
-                    <li class="main-nav__item"><a href="" class="main-nav__links"></a>Pricing</li>
-                    <li class="main-nav__item"><a href="" class="main-nav__links">Features</a></li>
+                    <li class="main-nav__item"><a href="#team" class="main-nav__link">The Team</a></li>
+                    <li class="main-nav__item"><a href="#price" class="main-nav__link">Pricing</a></li>
+                    <li class="main-nav__item"><a href="#features" class="main-nav__link">Features</a></li>
                 </ul>
             </nav>
         </header>
+        <article class="main-content container">
+            <header class="main-content__child">
+                <h1 class="main-content__item">Beautiful Free Nova template</h1>
+                <p class="main-content__item">A top notch premium quality template for your next web project.</p>
+                <button class="btn btn--download">Download FREE!</button>
+            </header>
+            <div class="main-content__child">
+                <img src="/images/screen.png" alt="screen" class="main-content__img">
+            </div>
+        </article>
     </section>
     <main>
-        <section class="main-container" id="features">
-            <article class="main-content container">
-                <div class="main-content__child">
-                    <h1 class="main-content__item">Beautiful Free Nova template</h1>
-                    <p class="main-content__item">A top notch premium quality template for your next web project.</p>
-                    <button>Download FREE!</button>
-                </div>
-                <div class="main-content__child">
-                    <img src="/images/screen.png" alt="screen">
-                </div>
-            </article>
-        </section>
-
-        <section class="main-container">
+        <section class="main-container features-container" id="features">
             <div class="container">
-                <h2 class="header-title header-title--first">Features</h2>
+                <h2 class="header-title header-title--color">Features</h2>
                 <ul class="features">
-                    <li class="features-item">fully responsive
-                        <img src="/images/responsive.svg" alt="phone" class="feature-phone">
-                        <h3 class="feature-header">fully responsive</h3>
-                        <p class="features-text">Looks amazing on any device: smartphone, tablet, laptop and desktop.
-                        </p>
-                    </li>
-                    <li class="features-item">
-                        <img src="/images/customizable.svg" alt="tools" class="feature-phone">
-                        <h3 class="feature-header">customizable</h3>
-                        <p class="features-text">Change the colors, pictures or any of the sections to suit your needs.
-                        </p>
-                    </li>
-                    <li class="features-item">
-                        <img src="/images/design.svg" alt="design" class="feature-phone">
-                        <h3 class="feature-header">slick and beautiful design</h3>
-                        <p class="features-text">Trendy and fresh design, fits any websites.</p>
-                    </li>
-                </ul>
+                    <ul class="features-item">
+                        <li class="features-shape"><img src="/images/responsive.svg" alt="phone" class="feature-img">
+                        </li>
+                        <li>
+                            <h3 class="feature-header">fully responsive</h3>
+                        </li>
+                        <li>
+                            <p class="features-text">Looks amazing on any device: smartphone, tablet, laptop and
+                                desktop.</p>
+                        </li>
+                    </ul>
+                    <ul class="features-item">
+                        <li class="features-shape"><img src="/images/customizable.svg" alt="tools" class="feature-img">
+                        </li>
+                        <li>
+                            <h3 class="feature-header">customizable</h3>
+                        </li>
+                        <li>
+                            <p class="features-text">Change the colors, pictures or any of the sections to suit your
+                                needs.
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="features-item">
+                        <li class="features-shape"><img src="/images/design.svg" alt="design" class="feature-img"></li>
+                        <li>
+                            <h3 class="feature-header">slick and beautiful design</h3>
+                        </li>
+                        <li>
+                            <p class="features-text">Trendy and fresh design, fits any websites.</p>
+                        </li>
+                    </ul>
             </div>
         </section>
         <section class="main-container">
             <div class="container-logos"><img src="/images/logos.png" alt="logos"></div>
         </section>
 
-        <section class="main-content">
-            <div class="main-content__child">
+        <section class=" main-container lorem-container">
+            <div class="lorem-content__child">
                 <img src="/images/imac.png" alt="imac">
             </div>
-            <div class="main-content__child">
-                <h2 class="header-title header-title--second">Simple an beautiful</h2>
-                <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed lacinia est.
+            <div class="lorem-content__child">
+                <h2 class="header-title">Simple and beautiful</h2>
+                <p class="header-text lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed
+                    lacinia est.
                     Praesent lacinia augue maximus, placerat neque ac, cursus dui. Duis non pretium dolor, in placerat
                     elit. Duis at aliquet lorem. </p>
             </div>
         </section>
 
         <section class="main-container" id="price">
+            <header class="container">
+                <h2 class="header-title"> Choose your pricing plan</h2>
+                <p class="price-description">Pick any of our super affordable pricing plans</p>
+            </header>
             <div class="container">
-                <h2 class="header-title header-title--second">
-                    <p class="price-description">Pick any of our super affordable pricing plans</p>
-                </h2>
-            </div>
-            <div class="container">
-                <ul class="price-container">
-                    <li class="price-box">
-                        <h4 class="price-title" basic></h4>
-                        <p class="price">$15</p>
-                        <p class="month">per month</p>
-                        <p class="description">Up to 7 projects</p>
-                        <p class="description">Additional Developers</p>
-                        <button type="submit">Get started</button>
-                    </li>
-                    <li class="price-box">
-                        <h4 class="price-title">agency</h4>
-                        <p class="price">$55</p>
-                        <p class="month">per month</p>
-                        <p class="description">Up to 25 Projects</p>
-                        <p class="description">2 Additional Developers</p>
-                        <p class="description">Unlimited support</p>
-                        <button type="submit">Get started</button>
-                    </li>
-                    <li class="price-box">
-                        <h4 class="price-title">pro</h4>
-                        <p class="price">$75</p>
-                        <p class="month">per month</p>
-                        <p class="description">Up to 25 Projects</p>
-                        <p class="description">2 Additional Developers</p>
-                        <p class="description">Unlimited support</p>
-                        <p class="description">1.5Gb Disk Space</p>
-                        <button type="submit">Get started</button>
-                    </li>
-                </ul>
+                <div class="price-container">
+                    <ul class="price-box">
+                        <li>
+                            <h4 class="price-title">basic</h4>
+                        </li>
+                        <li class="price">$15</li>
+                        <li class="month">per month</li>
+                        <li class="description">Up to 7 projects</li>
+                        <li class="description">Additional Developers</li>
+                        </li><button type="submit" class="btn btn--start">Get started</button></li>
+                    </ul>
+                    <ul class="price-box">
+                        <li>
+                            <h4 class="price-title">agency</h4>
+                        </li>
+                        <li class="price">$55</li>
+                        <li class="month">per month</li>
+                        <li class="description">Up to 25 projects</li>
+                        <li class="description">Additional Developers</li>
+                        <li class="description">Unlimited supports</li>
+                        </li><button type="submit" class="btn btn--start">Get started</button></li>
+                    </ul>
+                    <ul class="price-box">
+                        <li>
+                            <h4 class="price-title">pro</h4>
+                        </li>
+                        <li class="price">$75</li>
+                        <li class="month">per month</li>
+                        <li class="description">Up to 25 projects</li>
+                        <li class="description">Additional Developers</li>
+                        <li class="description">Unlimited supports</li>
+                        <li class="description">1.5Gb Disk Space</li>
+                        </li><button type="submit" class="btn btn--start">Get started</button></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section class="main-container" id="team">
             <div class="container">
-                <h2 class="header-title header-title--second">the team</h2>
-                <ul class="team-container container">
-                    <li class="team-box">
-                        <img src="/images/cto.png" alt="johnny b good" class="team-img">
-                        <p class="team-position">cto</p>
-                        <p class="team-name">Johnny B Good</p>
-                        <p class="team-description">The brains behind the whole operation</p>
-                        <a href="www.twitter.com" class="">
-                            <img src="/images/team-twitter.svg" alt="logo twitter" class="small-logo">
-                        </a>
-                        <a href="www.facebook.com" class="">
-                            <img src="/images/team-facebook.svg" alt="logo fb" class="small-logo">
-                        </a>
-                    </li>
-                    <li class="team-box">
-                        <img src="/images/ceo.png" alt="Roll over Beetoven" class="team-img">
-                        <p class="team-position">ceo</p>
-                        <p class="team-name">Roll over Beetoven</p>
-                        <p class="team-description">The one that puts it all together</p>
-                        <a href="www.twitter.com" class="">
-                            <img src="/images/team-twitter.svg" alt="logo twitter" class="small-logo">
-                        </a>
-                        <a href="www.facebook.com" class="">
-                            <img src="/images/team-facebook.svg" alt="logo fb" class="small-logo">
-                        </a>
-                    </li>
-                    <li class="team-box">
-                        <img src="/images/cfo.png" alt="Chuck Berr" class="team-img">
-                        <p class="team-position">cfo</p>
-                        <p class="team-name" Chuck Berry></p>
-                        <p class="team-description"></p>The guy with his hand on teh wallnet></p>
-                        <a href="www.twitter.com" class="">
-                            <img src="/images/team-twitter.svg" alt="logo twitter" class="small-logo">
-                        </a>
-                        <a href="www.facebook.com" class="">
-                            <img src="/images/team-facebook.svg" alt="logo fb" class="small-logo">
-                        </a>
-                    </li>
-                </ul>
+                <h2 class="header-title">the team</h2>
+                <div class="team-container container">
+                    <ul class="team-box">
+                        <li><img src="/images/cto.png" alt="johnny b good" class="team-img"></li>
+                        <li class="team-position">cto</li>
+                        <li class="team-name">Johnny B Good</li>
+                        <li class="team-description">The brains behind the whole operation</li>
+                        <li class="team-description__social"><a href="www.twitter.com" class="">
+                                <img src="/images/team-twitter.svg" alt="logo twitter" class="small-logo">
+                            </a>
+                            <a href="www.facebook.com" class="">
+                                <img src="/images/team-facebook.svg" alt="logo fb" class="small-logo">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="team-box">
+                        <li><img src="/images/ceo.png" alt="Roll over Beetoven" class="team-img"></li>
+                        <li class="team-position">ceo</li>
+                        <li class="team-name">Roll over Beetoven</li>
+                        <li class="team-description">The one that puts it all together</li>
+                        <li class="team-description__social"><a href="www.twitter.com">
+                                <img src="/images/team-twitter.svg" alt="logo twitter" class="small-logo">
+                            </a>
+                            <a href="www.facebook.com">
+                                <img src="/images/team-facebook.svg" alt="logo fb" class="small-logo">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="team-box">
+                        <li><img src="/images/cfo.png" alt="Chuck Berr" class="team-img"></li>
+                        <li class="team-position">cfo</li>
+                        <li class="team-name">Chuck Berry</li>
+                        <li class="team-description">
+                            </p>The guy with his hand on teh wallnet</p>
+                        <li class="team-description__social"><a href="www.twitter.com">
+                                <img src="/images/team-twitter.svg" alt="logo twitter" class="small-logo">
+                            </a>
+                            <a href="www.facebook.com" class="">
+                                <img src="/images/team-facebook.svg" alt="logo fb" class="small-logo">
+                            </a>
+                        </li>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="main-container">
-        <span class="footer-copyright"></span>
-        <a href="www.webscope.io"><img src="/images/webscope.svg" alt="webscope-logo" class="footer-img"></a>
+    <footer class="main-container footer-container">
+        <div class="footer__template">
+            <p class="footer-copyright">A free template by</p>
+            <a href="www.webscope.io"><img src="/images/webscope.svg" alt="webscope-logo" class="footer-img"></a>
+        </div>
     </footer>
 
 </body>
